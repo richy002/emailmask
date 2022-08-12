@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+//   function emailInput () {
+//     let getEmail =  prompt('Enter Your Email')
+
+
+//     let theResult = getEmail + 'yes'
+    
+//     //getEmail.replaceAll(/getEmail/igm, "*******@gmail.com")
+
+
+//     alert( theResult )
+
+
+
+
+//   }
+
+//   emailInput();
+
+//  email = ' every very thing you see is VEry very better very'//prompt ('enter name')
+
+//   let result = email.replace(/very/ig, "*****************")
+
+//   console.log(result)
+//   alert(result)
+
+
+
+const email = prompt('Please Enter Email');
+
+const maskEmail = (email = '') => {
+
+   const [name, domain] = email.split('@');
+
+   const { length: len } = name;
+
+   const maskedName = name[0] + '****************' + name[len - 1];
+
+   const maskedEmail = maskedName + '@' + domain;
+   
+   return maskedEmail;
+};
+alert(maskEmail(email));
+
+
+
+    </script>
+    
+</body>
+</html>
